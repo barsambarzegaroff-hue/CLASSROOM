@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>🚀 CLASSROOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="join">
+  <div class="card">
+    <div class="logo">🚀</div>
+    <h1>CLASSROOM</h1>
+    <p>روم آنلاین دوستانه 😎</p>
+
+    <input id="name" placeholder="اسمت رو بنویس">
+    <input id="room" placeholder="اسم روم">
+
+    <button onclick="joinRoom()">🚀 ورود به روم</button>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+
+  <header>
+    <h2>🚀 CLASSROOM</h2>
+    <span id="roomTitle"></span>
+  </header>
+
+  <main>
+
+    <section class="people">
+      <h3>👥 افراد روم</h3>
+      <div id="users"></div>
+    </section>
+
+    <section class="chat">
+      <div id="messages"></div>
+
+      <div class="send">
+        <input id="message" placeholder="پیامت رو بنویس...">
+        <button onclick="sendMessage()">ارسال 🚀</button>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
